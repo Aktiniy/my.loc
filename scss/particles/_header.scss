@@ -1,0 +1,46 @@
+@charset "UTF-8";
+header {
+  nav {
+    background: $color_elloh;
+    ul {
+      li {
+        display: inline-block;
+        a {
+          color: $color_white;
+          display: block;
+          padding: 10px 20px;
+          text-decoration: none;
+          &:hover {
+            background: rgba(#000, 0.5);
+          }
+
+        }
+      }
+
+    }
+  }
+}
+
+table {
+  td {
+    height: 15px;
+    width: 15px;
+  }
+}
+
+$x: 0;
+$y: 0;
+$z: 225;
+@for $i from 1 through 20 {
+  @for $c from 1 through 20 {
+    .t__#{$i}__#{$c} {
+      background: rgb($x, $y, $z); //
+
+      $y: $y + 1;
+      $x: $x + 5;
+
+    }
+  }
+
+  $z: $z - 5;
+}

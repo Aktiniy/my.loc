@@ -1,0 +1,100 @@
+@charset "UTF-8";
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    font: {
+        size: 20px;
+        weight: bold;
+        family: $font_sans_serif;
+    }
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.btn {
+    font: {
+        size: 14px;
+        weight: bold;
+        family: $font_sans_serif;
+    }
+    padding: 8px 14px;
+    background: transparent;
+    color: $color_white;
+    border: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    @each $status, $color in $btn-colors {
+
+        &--#{$status} {
+
+            background: $color; //
+        }
+    }
+}
+table {
+    position: absolute;
+    bottom: 200px;
+    left: 100px;
+}
+div {
+    position: absolute;
+    left: 200px;
+    bottom: 700px;
+}
+#galary_2 {
+    a {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: no-repeat center;
+        background-size: cover;
+        &:before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: #ffb100 no-repeat center;
+            background-size: cover;
+            opacity: 0;
+            transition: opacity 500ms ease-in-out;
+        }
+        &:first-child:before {
+            background-image: url('../image/1_h.jpg');
+        }
+        &:nth-child(3n+3):before{
+            background-color: red;
+        }
+        &:last-child:before {
+            background-image: url('../image/2_h.jpg');
+        }
+        &:hover:before {
+            opacity: 1;
+        }
+    }
+}
+.cool{
+    &:before {
+        content: 'Hi ';
+    }
+    &:after {
+        content: ' cool';
+    }
+
+}
+html{
+    user-select: none;
+}

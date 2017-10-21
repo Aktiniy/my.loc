@@ -1,0 +1,1305 @@
+/*
+
+*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Tahoma, sans-serif; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.btn {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Arial, Tahoma, sans-serif;
+  padding: 8px 14px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  cursor: pointer; }
+  .btn--primary {
+    background: #0042f0; }
+  .btn--success {
+    background: #27BA6C; }
+  .btn--info {
+    background: #03a9f4; }
+  .btn--warning {
+    background: #FF8833; }
+  .btn--danger {
+    background: #ff1a1a; }
+
+table {
+  position: absolute;
+  bottom: 200px;
+  left: 100px; }
+
+div {
+  position: absolute;
+  left: 200px;
+  bottom: 700px; }
+
+#galary_2 a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: no-repeat center;
+  background-size: cover; }
+  #galary_2 a:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #ffb100 no-repeat center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out; }
+  #galary_2 a:first-child:before {
+    background-image: url("../image/1_h.jpg"); }
+  #galary_2 a:nth-child(3n+3):before {
+    background-color: red; }
+  #galary_2 a:last-child:before {
+    background-image: url("../image/2_h.jpg"); }
+  #galary_2 a:hover:before {
+    opacity: 1; }
+
+.cool:before {
+  content: 'Hi '; }
+.cool:after {
+  content: ' cool'; }
+
+html {
+  user-select: none; }
+
+header nav {
+  background: #ffb100; }
+  header nav ul li {
+    display: inline-block; }
+    header nav ul li a {
+      color: #fff;
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none; }
+      header nav ul li a:hover {
+        background: rgba(0, 0, 0, 0.5); }
+
+table td {
+  height: 15px;
+  width: 15px; }
+
+.t__1__1 {
+  background: #0000e1; }
+
+.t__1__2 {
+  background: #0501e1; }
+
+.t__1__3 {
+  background: #0a02e1; }
+
+.t__1__4 {
+  background: #0f03e1; }
+
+.t__1__5 {
+  background: #1404e1; }
+
+.t__1__6 {
+  background: #1905e1; }
+
+.t__1__7 {
+  background: #1e06e1; }
+
+.t__1__8 {
+  background: #2307e1; }
+
+.t__1__9 {
+  background: #2808e1; }
+
+.t__1__10 {
+  background: #2d09e1; }
+
+.t__1__11 {
+  background: #320ae1; }
+
+.t__1__12 {
+  background: #370be1; }
+
+.t__1__13 {
+  background: #3c0ce1; }
+
+.t__1__14 {
+  background: #410de1; }
+
+.t__1__15 {
+  background: #460ee1; }
+
+.t__1__16 {
+  background: #4b0fe1; }
+
+.t__1__17 {
+  background: #5010e1; }
+
+.t__1__18 {
+  background: #5511e1; }
+
+.t__1__19 {
+  background: #5a12e1; }
+
+.t__1__20 {
+  background: #5f13e1; }
+
+.t__2__1 {
+  background: #6414dc; }
+
+.t__2__2 {
+  background: #6915dc; }
+
+.t__2__3 {
+  background: #6e16dc; }
+
+.t__2__4 {
+  background: #7317dc; }
+
+.t__2__5 {
+  background: #7818dc; }
+
+.t__2__6 {
+  background: #7d19dc; }
+
+.t__2__7 {
+  background: #821adc; }
+
+.t__2__8 {
+  background: #871bdc; }
+
+.t__2__9 {
+  background: #8c1cdc; }
+
+.t__2__10 {
+  background: #911ddc; }
+
+.t__2__11 {
+  background: #961edc; }
+
+.t__2__12 {
+  background: #9b1fdc; }
+
+.t__2__13 {
+  background: #a020dc; }
+
+.t__2__14 {
+  background: #a521dc; }
+
+.t__2__15 {
+  background: #aa22dc; }
+
+.t__2__16 {
+  background: #af23dc; }
+
+.t__2__17 {
+  background: #b424dc; }
+
+.t__2__18 {
+  background: #b925dc; }
+
+.t__2__19 {
+  background: #be26dc; }
+
+.t__2__20 {
+  background: #c327dc; }
+
+.t__3__1 {
+  background: #c828d7; }
+
+.t__3__2 {
+  background: #cd29d7; }
+
+.t__3__3 {
+  background: #d22ad7; }
+
+.t__3__4 {
+  background: #d72bd7; }
+
+.t__3__5 {
+  background: #dc2cd7; }
+
+.t__3__6 {
+  background: #e12dd7; }
+
+.t__3__7 {
+  background: #e62ed7; }
+
+.t__3__8 {
+  background: #eb2fd7; }
+
+.t__3__9 {
+  background: #f030d7; }
+
+.t__3__10 {
+  background: #f531d7; }
+
+.t__3__11 {
+  background: #fa32d7; }
+
+.t__3__12 {
+  background: #ff33d7; }
+
+.t__3__13 {
+  background: #ff34d7; }
+
+.t__3__14 {
+  background: #ff35d7; }
+
+.t__3__15 {
+  background: #ff36d7; }
+
+.t__3__16 {
+  background: #ff37d7; }
+
+.t__3__17 {
+  background: #ff38d7; }
+
+.t__3__18 {
+  background: #ff39d7; }
+
+.t__3__19 {
+  background: #ff3ad7; }
+
+.t__3__20 {
+  background: #ff3bd7; }
+
+.t__4__1 {
+  background: #ff3cd2; }
+
+.t__4__2 {
+  background: #ff3dd2; }
+
+.t__4__3 {
+  background: #ff3ed2; }
+
+.t__4__4 {
+  background: #ff3fd2; }
+
+.t__4__5 {
+  background: #ff40d2; }
+
+.t__4__6 {
+  background: #ff41d2; }
+
+.t__4__7 {
+  background: #ff42d2; }
+
+.t__4__8 {
+  background: #ff43d2; }
+
+.t__4__9 {
+  background: #ff44d2; }
+
+.t__4__10 {
+  background: #ff45d2; }
+
+.t__4__11 {
+  background: #ff46d2; }
+
+.t__4__12 {
+  background: #ff47d2; }
+
+.t__4__13 {
+  background: #ff48d2; }
+
+.t__4__14 {
+  background: #ff49d2; }
+
+.t__4__15 {
+  background: #ff4ad2; }
+
+.t__4__16 {
+  background: #ff4bd2; }
+
+.t__4__17 {
+  background: #ff4cd2; }
+
+.t__4__18 {
+  background: #ff4dd2; }
+
+.t__4__19 {
+  background: #ff4ed2; }
+
+.t__4__20 {
+  background: #ff4fd2; }
+
+.t__5__1 {
+  background: #ff50cd; }
+
+.t__5__2 {
+  background: #ff51cd; }
+
+.t__5__3 {
+  background: #ff52cd; }
+
+.t__5__4 {
+  background: #ff53cd; }
+
+.t__5__5 {
+  background: #ff54cd; }
+
+.t__5__6 {
+  background: #ff55cd; }
+
+.t__5__7 {
+  background: #ff56cd; }
+
+.t__5__8 {
+  background: #ff57cd; }
+
+.t__5__9 {
+  background: #ff58cd; }
+
+.t__5__10 {
+  background: #ff59cd; }
+
+.t__5__11 {
+  background: #ff5acd; }
+
+.t__5__12 {
+  background: #ff5bcd; }
+
+.t__5__13 {
+  background: #ff5ccd; }
+
+.t__5__14 {
+  background: #ff5dcd; }
+
+.t__5__15 {
+  background: #ff5ecd; }
+
+.t__5__16 {
+  background: #ff5fcd; }
+
+.t__5__17 {
+  background: #ff60cd; }
+
+.t__5__18 {
+  background: #ff61cd; }
+
+.t__5__19 {
+  background: #ff62cd; }
+
+.t__5__20 {
+  background: #ff63cd; }
+
+.t__6__1 {
+  background: #ff64c8; }
+
+.t__6__2 {
+  background: #ff65c8; }
+
+.t__6__3 {
+  background: #ff66c8; }
+
+.t__6__4 {
+  background: #ff67c8; }
+
+.t__6__5 {
+  background: #ff68c8; }
+
+.t__6__6 {
+  background: #ff69c8; }
+
+.t__6__7 {
+  background: #ff6ac8; }
+
+.t__6__8 {
+  background: #ff6bc8; }
+
+.t__6__9 {
+  background: #ff6cc8; }
+
+.t__6__10 {
+  background: #ff6dc8; }
+
+.t__6__11 {
+  background: #ff6ec8; }
+
+.t__6__12 {
+  background: #ff6fc8; }
+
+.t__6__13 {
+  background: #ff70c8; }
+
+.t__6__14 {
+  background: #ff71c8; }
+
+.t__6__15 {
+  background: #ff72c8; }
+
+.t__6__16 {
+  background: #ff73c8; }
+
+.t__6__17 {
+  background: #ff74c8; }
+
+.t__6__18 {
+  background: #ff75c8; }
+
+.t__6__19 {
+  background: #ff76c8; }
+
+.t__6__20 {
+  background: #ff77c8; }
+
+.t__7__1 {
+  background: #ff78c3; }
+
+.t__7__2 {
+  background: #ff79c3; }
+
+.t__7__3 {
+  background: #ff7ac3; }
+
+.t__7__4 {
+  background: #ff7bc3; }
+
+.t__7__5 {
+  background: #ff7cc3; }
+
+.t__7__6 {
+  background: #ff7dc3; }
+
+.t__7__7 {
+  background: #ff7ec3; }
+
+.t__7__8 {
+  background: #ff7fc3; }
+
+.t__7__9 {
+  background: #ff80c3; }
+
+.t__7__10 {
+  background: #ff81c3; }
+
+.t__7__11 {
+  background: #ff82c3; }
+
+.t__7__12 {
+  background: #ff83c3; }
+
+.t__7__13 {
+  background: #ff84c3; }
+
+.t__7__14 {
+  background: #ff85c3; }
+
+.t__7__15 {
+  background: #ff86c3; }
+
+.t__7__16 {
+  background: #ff87c3; }
+
+.t__7__17 {
+  background: #ff88c3; }
+
+.t__7__18 {
+  background: #ff89c3; }
+
+.t__7__19 {
+  background: #ff8ac3; }
+
+.t__7__20 {
+  background: #ff8bc3; }
+
+.t__8__1 {
+  background: #ff8cbe; }
+
+.t__8__2 {
+  background: #ff8dbe; }
+
+.t__8__3 {
+  background: #ff8ebe; }
+
+.t__8__4 {
+  background: #ff8fbe; }
+
+.t__8__5 {
+  background: #ff90be; }
+
+.t__8__6 {
+  background: #ff91be; }
+
+.t__8__7 {
+  background: #ff92be; }
+
+.t__8__8 {
+  background: #ff93be; }
+
+.t__8__9 {
+  background: #ff94be; }
+
+.t__8__10 {
+  background: #ff95be; }
+
+.t__8__11 {
+  background: #ff96be; }
+
+.t__8__12 {
+  background: #ff97be; }
+
+.t__8__13 {
+  background: #ff98be; }
+
+.t__8__14 {
+  background: #ff99be; }
+
+.t__8__15 {
+  background: #ff9abe; }
+
+.t__8__16 {
+  background: #ff9bbe; }
+
+.t__8__17 {
+  background: #ff9cbe; }
+
+.t__8__18 {
+  background: #ff9dbe; }
+
+.t__8__19 {
+  background: #ff9ebe; }
+
+.t__8__20 {
+  background: #ff9fbe; }
+
+.t__9__1 {
+  background: #ffa0b9; }
+
+.t__9__2 {
+  background: #ffa1b9; }
+
+.t__9__3 {
+  background: #ffa2b9; }
+
+.t__9__4 {
+  background: #ffa3b9; }
+
+.t__9__5 {
+  background: #ffa4b9; }
+
+.t__9__6 {
+  background: #ffa5b9; }
+
+.t__9__7 {
+  background: #ffa6b9; }
+
+.t__9__8 {
+  background: #ffa7b9; }
+
+.t__9__9 {
+  background: #ffa8b9; }
+
+.t__9__10 {
+  background: #ffa9b9; }
+
+.t__9__11 {
+  background: #ffaab9; }
+
+.t__9__12 {
+  background: #ffabb9; }
+
+.t__9__13 {
+  background: #ffacb9; }
+
+.t__9__14 {
+  background: #ffadb9; }
+
+.t__9__15 {
+  background: #ffaeb9; }
+
+.t__9__16 {
+  background: #ffafb9; }
+
+.t__9__17 {
+  background: #ffb0b9; }
+
+.t__9__18 {
+  background: #ffb1b9; }
+
+.t__9__19 {
+  background: #ffb2b9; }
+
+.t__9__20 {
+  background: #ffb3b9; }
+
+.t__10__1 {
+  background: #ffb4b4; }
+
+.t__10__2 {
+  background: #ffb5b4; }
+
+.t__10__3 {
+  background: #ffb6b4; }
+
+.t__10__4 {
+  background: #ffb7b4; }
+
+.t__10__5 {
+  background: #ffb8b4; }
+
+.t__10__6 {
+  background: #ffb9b4; }
+
+.t__10__7 {
+  background: #ffbab4; }
+
+.t__10__8 {
+  background: #ffbbb4; }
+
+.t__10__9 {
+  background: #ffbcb4; }
+
+.t__10__10 {
+  background: #ffbdb4; }
+
+.t__10__11 {
+  background: #ffbeb4; }
+
+.t__10__12 {
+  background: #ffbfb4; }
+
+.t__10__13 {
+  background: #ffc0b4; }
+
+.t__10__14 {
+  background: #ffc1b4; }
+
+.t__10__15 {
+  background: #ffc2b4; }
+
+.t__10__16 {
+  background: #ffc3b4; }
+
+.t__10__17 {
+  background: #ffc4b4; }
+
+.t__10__18 {
+  background: #ffc5b4; }
+
+.t__10__19 {
+  background: #ffc6b4; }
+
+.t__10__20 {
+  background: #ffc7b4; }
+
+.t__11__1 {
+  background: #ffc8af; }
+
+.t__11__2 {
+  background: #ffc9af; }
+
+.t__11__3 {
+  background: #ffcaaf; }
+
+.t__11__4 {
+  background: #ffcbaf; }
+
+.t__11__5 {
+  background: #ffccaf; }
+
+.t__11__6 {
+  background: #ffcdaf; }
+
+.t__11__7 {
+  background: #ffceaf; }
+
+.t__11__8 {
+  background: #ffcfaf; }
+
+.t__11__9 {
+  background: #ffd0af; }
+
+.t__11__10 {
+  background: #ffd1af; }
+
+.t__11__11 {
+  background: #ffd2af; }
+
+.t__11__12 {
+  background: #ffd3af; }
+
+.t__11__13 {
+  background: #ffd4af; }
+
+.t__11__14 {
+  background: #ffd5af; }
+
+.t__11__15 {
+  background: #ffd6af; }
+
+.t__11__16 {
+  background: #ffd7af; }
+
+.t__11__17 {
+  background: #ffd8af; }
+
+.t__11__18 {
+  background: #ffd9af; }
+
+.t__11__19 {
+  background: #ffdaaf; }
+
+.t__11__20 {
+  background: #ffdbaf; }
+
+.t__12__1 {
+  background: #ffdcaa; }
+
+.t__12__2 {
+  background: #ffddaa; }
+
+.t__12__3 {
+  background: #ffdeaa; }
+
+.t__12__4 {
+  background: #ffdfaa; }
+
+.t__12__5 {
+  background: #ffe0aa; }
+
+.t__12__6 {
+  background: #ffe1aa; }
+
+.t__12__7 {
+  background: #ffe2aa; }
+
+.t__12__8 {
+  background: #ffe3aa; }
+
+.t__12__9 {
+  background: #ffe4aa; }
+
+.t__12__10 {
+  background: #ffe5aa; }
+
+.t__12__11 {
+  background: #ffe6aa; }
+
+.t__12__12 {
+  background: #ffe7aa; }
+
+.t__12__13 {
+  background: #ffe8aa; }
+
+.t__12__14 {
+  background: #ffe9aa; }
+
+.t__12__15 {
+  background: #ffeaaa; }
+
+.t__12__16 {
+  background: #ffebaa; }
+
+.t__12__17 {
+  background: #ffecaa; }
+
+.t__12__18 {
+  background: #ffedaa; }
+
+.t__12__19 {
+  background: #ffeeaa; }
+
+.t__12__20 {
+  background: #ffefaa; }
+
+.t__13__1 {
+  background: #fff0a5; }
+
+.t__13__2 {
+  background: #fff1a5; }
+
+.t__13__3 {
+  background: #fff2a5; }
+
+.t__13__4 {
+  background: #fff3a5; }
+
+.t__13__5 {
+  background: #fff4a5; }
+
+.t__13__6 {
+  background: #fff5a5; }
+
+.t__13__7 {
+  background: #fff6a5; }
+
+.t__13__8 {
+  background: #fff7a5; }
+
+.t__13__9 {
+  background: #fff8a5; }
+
+.t__13__10 {
+  background: #fff9a5; }
+
+.t__13__11 {
+  background: #fffaa5; }
+
+.t__13__12 {
+  background: #fffba5; }
+
+.t__13__13 {
+  background: #fffca5; }
+
+.t__13__14 {
+  background: #fffda5; }
+
+.t__13__15 {
+  background: #fffea5; }
+
+.t__13__16 {
+  background: #ffffa5; }
+
+.t__13__17 {
+  background: #ffffa5; }
+
+.t__13__18 {
+  background: #ffffa5; }
+
+.t__13__19 {
+  background: #ffffa5; }
+
+.t__13__20 {
+  background: #ffffa5; }
+
+.t__14__1 {
+  background: #ffffa0; }
+
+.t__14__2 {
+  background: #ffffa0; }
+
+.t__14__3 {
+  background: #ffffa0; }
+
+.t__14__4 {
+  background: #ffffa0; }
+
+.t__14__5 {
+  background: #ffffa0; }
+
+.t__14__6 {
+  background: #ffffa0; }
+
+.t__14__7 {
+  background: #ffffa0; }
+
+.t__14__8 {
+  background: #ffffa0; }
+
+.t__14__9 {
+  background: #ffffa0; }
+
+.t__14__10 {
+  background: #ffffa0; }
+
+.t__14__11 {
+  background: #ffffa0; }
+
+.t__14__12 {
+  background: #ffffa0; }
+
+.t__14__13 {
+  background: #ffffa0; }
+
+.t__14__14 {
+  background: #ffffa0; }
+
+.t__14__15 {
+  background: #ffffa0; }
+
+.t__14__16 {
+  background: #ffffa0; }
+
+.t__14__17 {
+  background: #ffffa0; }
+
+.t__14__18 {
+  background: #ffffa0; }
+
+.t__14__19 {
+  background: #ffffa0; }
+
+.t__14__20 {
+  background: #ffffa0; }
+
+.t__15__1 {
+  background: #ffff9b; }
+
+.t__15__2 {
+  background: #ffff9b; }
+
+.t__15__3 {
+  background: #ffff9b; }
+
+.t__15__4 {
+  background: #ffff9b; }
+
+.t__15__5 {
+  background: #ffff9b; }
+
+.t__15__6 {
+  background: #ffff9b; }
+
+.t__15__7 {
+  background: #ffff9b; }
+
+.t__15__8 {
+  background: #ffff9b; }
+
+.t__15__9 {
+  background: #ffff9b; }
+
+.t__15__10 {
+  background: #ffff9b; }
+
+.t__15__11 {
+  background: #ffff9b; }
+
+.t__15__12 {
+  background: #ffff9b; }
+
+.t__15__13 {
+  background: #ffff9b; }
+
+.t__15__14 {
+  background: #ffff9b; }
+
+.t__15__15 {
+  background: #ffff9b; }
+
+.t__15__16 {
+  background: #ffff9b; }
+
+.t__15__17 {
+  background: #ffff9b; }
+
+.t__15__18 {
+  background: #ffff9b; }
+
+.t__15__19 {
+  background: #ffff9b; }
+
+.t__15__20 {
+  background: #ffff9b; }
+
+.t__16__1 {
+  background: #ffff96; }
+
+.t__16__2 {
+  background: #ffff96; }
+
+.t__16__3 {
+  background: #ffff96; }
+
+.t__16__4 {
+  background: #ffff96; }
+
+.t__16__5 {
+  background: #ffff96; }
+
+.t__16__6 {
+  background: #ffff96; }
+
+.t__16__7 {
+  background: #ffff96; }
+
+.t__16__8 {
+  background: #ffff96; }
+
+.t__16__9 {
+  background: #ffff96; }
+
+.t__16__10 {
+  background: #ffff96; }
+
+.t__16__11 {
+  background: #ffff96; }
+
+.t__16__12 {
+  background: #ffff96; }
+
+.t__16__13 {
+  background: #ffff96; }
+
+.t__16__14 {
+  background: #ffff96; }
+
+.t__16__15 {
+  background: #ffff96; }
+
+.t__16__16 {
+  background: #ffff96; }
+
+.t__16__17 {
+  background: #ffff96; }
+
+.t__16__18 {
+  background: #ffff96; }
+
+.t__16__19 {
+  background: #ffff96; }
+
+.t__16__20 {
+  background: #ffff96; }
+
+.t__17__1 {
+  background: #ffff91; }
+
+.t__17__2 {
+  background: #ffff91; }
+
+.t__17__3 {
+  background: #ffff91; }
+
+.t__17__4 {
+  background: #ffff91; }
+
+.t__17__5 {
+  background: #ffff91; }
+
+.t__17__6 {
+  background: #ffff91; }
+
+.t__17__7 {
+  background: #ffff91; }
+
+.t__17__8 {
+  background: #ffff91; }
+
+.t__17__9 {
+  background: #ffff91; }
+
+.t__17__10 {
+  background: #ffff91; }
+
+.t__17__11 {
+  background: #ffff91; }
+
+.t__17__12 {
+  background: #ffff91; }
+
+.t__17__13 {
+  background: #ffff91; }
+
+.t__17__14 {
+  background: #ffff91; }
+
+.t__17__15 {
+  background: #ffff91; }
+
+.t__17__16 {
+  background: #ffff91; }
+
+.t__17__17 {
+  background: #ffff91; }
+
+.t__17__18 {
+  background: #ffff91; }
+
+.t__17__19 {
+  background: #ffff91; }
+
+.t__17__20 {
+  background: #ffff91; }
+
+.t__18__1 {
+  background: #ffff8c; }
+
+.t__18__2 {
+  background: #ffff8c; }
+
+.t__18__3 {
+  background: #ffff8c; }
+
+.t__18__4 {
+  background: #ffff8c; }
+
+.t__18__5 {
+  background: #ffff8c; }
+
+.t__18__6 {
+  background: #ffff8c; }
+
+.t__18__7 {
+  background: #ffff8c; }
+
+.t__18__8 {
+  background: #ffff8c; }
+
+.t__18__9 {
+  background: #ffff8c; }
+
+.t__18__10 {
+  background: #ffff8c; }
+
+.t__18__11 {
+  background: #ffff8c; }
+
+.t__18__12 {
+  background: #ffff8c; }
+
+.t__18__13 {
+  background: #ffff8c; }
+
+.t__18__14 {
+  background: #ffff8c; }
+
+.t__18__15 {
+  background: #ffff8c; }
+
+.t__18__16 {
+  background: #ffff8c; }
+
+.t__18__17 {
+  background: #ffff8c; }
+
+.t__18__18 {
+  background: #ffff8c; }
+
+.t__18__19 {
+  background: #ffff8c; }
+
+.t__18__20 {
+  background: #ffff8c; }
+
+.t__19__1 {
+  background: #ffff87; }
+
+.t__19__2 {
+  background: #ffff87; }
+
+.t__19__3 {
+  background: #ffff87; }
+
+.t__19__4 {
+  background: #ffff87; }
+
+.t__19__5 {
+  background: #ffff87; }
+
+.t__19__6 {
+  background: #ffff87; }
+
+.t__19__7 {
+  background: #ffff87; }
+
+.t__19__8 {
+  background: #ffff87; }
+
+.t__19__9 {
+  background: #ffff87; }
+
+.t__19__10 {
+  background: #ffff87; }
+
+.t__19__11 {
+  background: #ffff87; }
+
+.t__19__12 {
+  background: #ffff87; }
+
+.t__19__13 {
+  background: #ffff87; }
+
+.t__19__14 {
+  background: #ffff87; }
+
+.t__19__15 {
+  background: #ffff87; }
+
+.t__19__16 {
+  background: #ffff87; }
+
+.t__19__17 {
+  background: #ffff87; }
+
+.t__19__18 {
+  background: #ffff87; }
+
+.t__19__19 {
+  background: #ffff87; }
+
+.t__19__20 {
+  background: #ffff87; }
+
+.t__20__1 {
+  background: #ffff82; }
+
+.t__20__2 {
+  background: #ffff82; }
+
+.t__20__3 {
+  background: #ffff82; }
+
+.t__20__4 {
+  background: #ffff82; }
+
+.t__20__5 {
+  background: #ffff82; }
+
+.t__20__6 {
+  background: #ffff82; }
+
+.t__20__7 {
+  background: #ffff82; }
+
+.t__20__8 {
+  background: #ffff82; }
+
+.t__20__9 {
+  background: #ffff82; }
+
+.t__20__10 {
+  background: #ffff82; }
+
+.t__20__11 {
+  background: #ffff82; }
+
+.t__20__12 {
+  background: #ffff82; }
+
+.t__20__13 {
+  background: #ffff82; }
+
+.t__20__14 {
+  background: #ffff82; }
+
+.t__20__15 {
+  background: #ffff82; }
+
+.t__20__16 {
+  background: #ffff82; }
+
+.t__20__17 {
+  background: #ffff82; }
+
+.t__20__18 {
+  background: #ffff82; }
+
+.t__20__19 {
+  background: #ffff82; }
+
+.t__20__20 {
+  background: #ffff82; }
+
+/*# sourceMappingURL=main.css.map */
